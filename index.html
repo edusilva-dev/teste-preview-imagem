@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<link rel="stylesheet" href="style.css">
+    <title>Teste preview de card de produto</title>
 </head>
 <body>
-    <input type="file" name="file" id="file">
-    <img src="" alt="" id="img">
-    <script src="script.js"></script>
+	<div class="container">
+		<aside class="aside">
+			<section class="aside__section">
+				<div class="aside__section__header">Cadastrar Produto</div>
+
+				<div class="aside__section__body product">
+					<label for="file" name="image" class="product__input product__input__file_label">Imagem</label>
+					<input type="text" class="product__input" name="title" placeholder="Nome">
+					<input type="text" class="product__input" name="currentPrice" placeholder="Preço">
+					<input type="text" class="product__input" name="previousPrice" placeholder="Preço promocional">
+					<input type="text" class="product__input" placeholder="Código">
+					<input type="text" class="product__input" placeholder="Descrição">
+					<input type="text" class="product__input" placeholder="Categoria">
+					<input type="text" class="product__input" placeholder="Marca">
+					<input type="text" class="product__input" placeholder="Atributos">
+					<input type="text" class="product__input" placeholder="Variações">
+					<input type="text" class="product__input" placeholder="Estoque">
+					<input type="file" id="file" name="file" class="product__input__file">
+				</div>
+			</section>
+		</aside>
+
+		<div class="product_card__container">
+			<div class="product_card">
+				<div class="product_card__image">
+					<img src="" alt="Imagem do produto" class="product_card__image__file">
+				</div>
+
+				<div class="product_card__title">
+					<span class="product_card__title__text"></span>
+				</div>
+
+				<div class="product_card__price_container">
+					<span class="product_card__price_container__previous_price"></span>
+					<span class="product_card__price_container__current_price"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
 </body>
 </html>
